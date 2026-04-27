@@ -1,0 +1,81 @@
+# =============================================================================
+# PyTorch (CUDA 12.1 + RTX 3090)
+# =============================================================================
+# 【重要】在中国大陆网络环境下，请勿使用 pip 直接从 PyTorch 官方或阿里云安装 CUDA 版本，
+# 因为镜像源中可能缺失对应版本 wheel 包，导致 solver 错误地安装 CPU 版本。
+#
+# 推荐使用 conda + 清华镜像源安装 CUDA 12.1 版本的 PyTorch 及系统依赖：
+#
+#   conda install pytorch==2.5.1 torchvision==0.20.1 torchaudio==2.5.1 \
+#       pytorch-cuda=12.1 'llvm-openmp<16' mkl mkl-service libwebp \
+#       -c https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/pytorch/ \
+#       -c nvidia -c conda-forge
+#
+# 驱动要求：NVIDIA Driver >= 525.60.13 (CUDA 12.x)
+# 本机已验证：NVIDIA GeForce RTX 3090 + CUDA 12.1 + PyTorch 2.5.1 可用
+# =============================================================================
+
+# 以下行仅用于 pip 依赖解析；实际 PyTorch 请通过上述 conda 命令安装
+torch==2.5.1
+torchvision==0.20.1
+torchaudio==2.5.1
+
+# =============================================================================
+# PyTorch / torchvision 运行时依赖（需与 conda 安装的 CUDA 版本兼容）
+# =============================================================================
+typing_extensions>=4.15.0
+filelock>=3.29.0
+fsspec>=2024.0
+jinja2>=3.1.0
+networkx>=3.0
+sympy==1.13.1
+mpmath==1.3.0
+
+# =============================================================================
+# RF-DETR 实例分割模型及其训练依赖
+# =============================================================================
+# [train,loggers] 表示同时安装训练所需的额外依赖（如 pytorch-lightning 等）
+rfdetr[train,loggers]>=1.4.0
+
+# supervision 是一个计算机视觉工具库，提供数据可视化、评估指标等功能
+supervision>=0.25.0
+
+# =============================================================================
+# 通用 Python 依赖
+# =============================================================================
+# YAML 配置文件解析库
+pyyaml
+
+# 数据可视化
+matplotlib
+
+# 图像处理（Pillow）
+# 注意：如果 torchvision 报 libwebp 相关警告，请通过 conda install libwebp 安装系统库
+pillow
+
+# HTTP 请求库
+requests
+
+# 进度条显示
+# tqdm 常用于显示模型下载、数据加载等耗时操作的进度
+tqdm
+
+# 数值计算库（通常 PyTorch 已自带，这里显式声明以防版本冲突）
+numpy
+
+# =============================================================================
+# 可选依赖
+# =============================================================================
+# roboflow: 仅在需要从 Roboflow 平台自动下载示例数据集时才需要
+roboflow
+
+# =============================================================================
+# 系统依赖提示（非 pip 安装，需用 apt / conda 安装）
+# =============================================================================
+# 在 headless/容器环境中运行 opencv-python 可能需要以下系统库：
+#   Ubuntu/Debian: sudo apt-get install -y libxcb1 libgl1
+# torchvision 图像扩展需要：
+#   conda install -c conda-forge libwebp
+# PyTorch CUDA 版本需要：
+#   conda install -c nvidia pytorch-cuda=12.1
+# 详见: https://github.com/opencv/opencv-python#frequently-asked-questions

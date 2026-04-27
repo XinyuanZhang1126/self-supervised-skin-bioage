@@ -1,0 +1,84 @@
+# RF-DETR Segmentation Fine-tuning Configuration
+# Optimized for NVIDIA RTX 3090 (24GB VRAM)
+
+# ---------------------------------------------------------------------------
+# 1. Dataset
+# ---------------------------------------------------------------------------
+# If you use your own COCO-format dataset, set `use_custom_dataset: true`
+# and provide the absolute/relative path to the dataset root directory.
+# The directory must contain:
+#   train/
+#   valid/
+#   test/
+# and each split directory must contain:
+#   _annotations.coco.json
+#   *.jpg (or *.png)
+#
+# Example:
+#   data/
+#     train/
+#       _annotations.coco.json
+#       img1.jpg
+#     valid/
+#       _annotations.coco.json
+#       img2.jpg
+#     test/
+#       _annotations.coco.json
+#       img3.jpg
+# ---------------------------------------------------------------------------
+use_custom_dataset: true
+custom_dataset_path: "./data/creacks"
+
+# Example dataset (auto-downloaded if use_custom_dataset is false)
+# Roboflow API Key (only needed if you want to auto-download the example dataset)
+# Get yours at: https://app.roboflow.com/settings/api
+roboflow_api_key: "5BXuKbJ1ky2wBdUcQEDx"
+
+example_dataset:
+  name: "bloodshot_overfit"
+  version: 4
+
+# ---------------------------------------------------------------------------
+# 2. Model
+# ---------------------------------------------------------------------------
+# Choose between:
+#   - RFDETRSegNano   (fastest, smallest, recommended for fine-tuning)
+#   - RFDETRSegMedium (better accuracy, larger)
+#   - RFDETRSegLarge  (best accuracy, largest)
+model_name: "RFDETRSegNano"
+# pretrained weights are loaded automatically by the model class
+# (pretrain_weights defaults to 'rf-detr-seg-nano.pt', etc.)
+
+# ---------------------------------------------------------------------------
+# 3. Training Hyperparameters (3090 optimized)
+# ---------------------------------------------------------------------------
+# Colab T4 default: batch_size=4, grad_accum_steps=4  (effective batch = 16)
+# RTX 3090 (24GB):  batch_size=8, grad_accum_steps=2  (effective batch = 16)
+# If you have plenty of VRAM left, you can try batch_size=16, grad_accum_steps=1.
+# NOTE: creacks images are 640x640, so we can use larger batch_size.
+epochs: 5
+batch_size: 8
+grad_accum_steps: 2
+lr: null                 # null = use model default
+num_workers: 4
+resolution: 312          # model input resolution (must be divisible by patch_size=12)
+seed: 42
+
+# ---------------------------------------------------------------------------
+# 4. Paths
+# ---------------------------------------------------------------------------
+output_dir: "./outputs"
+dataset_root: "./data"
+
+# ---------------------------------------------------------------------------
+# 5. Inference / Evaluation
+# ---------------------------------------------------------------------------
+confidence_threshold: 0.5
+nms_threshold: 0.5
+max_detections: 300
+
+# ---------------------------------------------------------------------------
+# 6. Visualization
+# ---------------------------------------------------------------------------
+plot_top_k: 9            # Number of images to plot in a grid
+dpi: 150
