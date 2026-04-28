@@ -1,0 +1,478 @@
+{
+  "Below_Eye_Wrinkles.jpg": [
+    {
+      "cluster": 0,
+      "color_bgr": [
+        166,
+        105,
+        117
+      ],
+      "pixel_count": 22926,
+      "num_components": 2,
+      "output_file": "visualizations/separated_masks/Below_Eye_Wrinkles_color_166_105_117.png"
+    },
+    {
+      "cluster": 1,
+      "color_bgr": [
+        0,
+        255,
+        0
+      ],
+      "pixel_count": 16783,
+      "num_components": 94,
+      "output_file": "visualizations/separated_masks/Below_Eye_Wrinkles_color_0_255_0.png"
+    }
+  ],
+  "Between_Wrinkles.jpg": [
+    {
+      "cluster": 0,
+      "color_bgr": [
+        166,
+        105,
+        117
+      ],
+      "pixel_count": 6425,
+      "num_components": 1,
+      "output_file": "visualizations/separated_masks/Between_Wrinkles_color_166_105_117.png"
+    },
+    {
+      "cluster": 1,
+      "color_bgr": [
+        0,
+        255,
+        255
+      ],
+      "pixel_count": 3718,
+      "num_components": 6,
+      "output_file": "visualizations/separated_masks/Between_Wrinkles_color_0_255_255.png"
+    }
+  ],
+  "Fish_tail_Wrinkles.jpg": [
+    {
+      "cluster": 0,
+      "color_bgr": [
+        166,
+        105,
+        117
+      ],
+      "pixel_count": 22929,
+      "num_components": 2,
+      "output_file": "visualizations/separated_masks/Fish_tail_Wrinkles_color_166_105_117.png"
+    },
+    {
+      "cluster": 1,
+      "color_bgr": [
+        0,
+        255,
+        0
+      ],
+      "pixel_count": 8057,
+      "num_components": 45,
+      "output_file": "visualizations/separated_masks/Fish_tail_Wrinkles_color_0_255_0.png"
+    }
+  ],
+  "Forehead_Wrinkles.jpg": [
+    {
+      "cluster": 1,
+      "color_bgr": [
+        166,
+        105,
+        117
+      ],
+      "pixel_count": 18879,
+      "num_components": 1,
+      "output_file": "visualizations/separated_masks/Forehead_Wrinkles_color_166_105_117.png"
+    },
+    {
+      "cluster": 0,
+      "color_bgr": [
+        0,
+        255,
+        255
+      ],
+      "pixel_count": 55355,
+      "num_components": 77,
+      "output_file": "visualizations/separated_masks/Forehead_Wrinkles_color_0_255_255.png"
+    }
+  ],
+  "Nasal_Wrinkles.jpg": [
+    {
+      "cluster": 0,
+      "color_bgr": [
+        166,
+        105,
+        117
+      ],
+      "pixel_count": 12247,
+      "num_components": 2,
+      "output_file": "visualizations/separated_masks/Nasal_Wrinkles_color_166_105_117.png"
+    },
+    {
+      "cluster": 1,
+      "color_bgr": [
+        97,
+        61,
+        69
+      ],
+      "pixel_count": 3156,
+      "num_components": 2152,
+      "output_file": "visualizations/separated_masks/Nasal_Wrinkles_color_97_61_69.png"
+    }
+  ],
+  "Nose_root_Wrinkles.jpg": [
+    {
+      "cluster": 1,
+      "color_bgr": [
+        166,
+        105,
+        117
+      ],
+      "pixel_count": 6220,
+      "num_components": 1,
+      "output_file": "visualizations/separated_masks/Nose_root_Wrinkles_color_166_105_117.png"
+    },
+    {
+      "cluster": 0,
+      "color_bgr": [
+        0,
+        255,
+        0
+      ],
+      "pixel_count": 17626,
+      "num_components": 73,
+      "output_file": "visualizations/separated_masks/Nose_root_Wrinkles_color_0_255_0.png"
+    }
+  ],
+  "Acne_Face.jpg": [
+    {
+      "cluster": 0,
+      "color_bgr": [
+        166,
+        105,
+        117
+      ],
+      "pixel_count": 73900,
+      "num_components": 4,
+      "output_file": "visualizations/separated_masks/Acne_Face_color_166_105_117.png"
+    },
+    {
+      "cluster": 1,
+      "color_bgr": [
+        255,
+        255,
+        0
+      ],
+      "pixel_count": 3856,
+      "num_components": 4,
+      "output_file": "visualizations/separated_masks/Acne_Face_color_255_255_0.png"
+    }
+  ],
+  "Bloodshot_Face.jpg": [
+    {
+      "cluster": 0,
+      "color_bgr": [
+        166,
+        105,
+        117
+      ],
+      "pixel_count": 31755,
+      "num_components": 1,
+      "output_file": "visualizations/separated_masks/Bloodshot_Face_color_166_105_117.png"
+    },
+    {
+      "cluster": 1,
+      "color_bgr": [
+        0,
+        0,
+        255
+      ],
+      "pixel_count": 39028,
+      "num_components": 128,
+      "output_file": "visualizations/separated_masks/Bloodshot_Face_color_0_0_255.png"
+    }
+  ],
+  "Brown_Tag_Face.jpg": [
+    {
+      "cluster": 0,
+      "color_bgr": [
+        166,
+        105,
+        117
+      ],
+      "pixel_count": 79736,
+      "num_components": 1,
+      "output_file": "visualizations/separated_masks/Brown_Tag_Face_color_166_105_117.png"
+    },
+    {
+      "cluster": 1,
+      "color_bgr": [
+        255,
+        0,
+        0
+      ],
+      "pixel_count": 126056,
+      "num_components": 318,
+      "output_file": "visualizations/separated_masks/Brown_Tag_Face_color_255_0_0.png"
+    }
+  ],
+  "Comedones_Face.jpg": [
+    {
+      "cluster": 1,
+      "color_bgr": [
+        255,
+        0,
+        96
+      ],
+      "pixel_count": 130604,
+      "num_components": 400,
+      "output_file": "visualizations/separated_masks/Comedones_Face_color_255_0_96.png"
+    },
+    {
+      "cluster": 0,
+      "color_bgr": [
+        166,
+        105,
+        117
+      ],
+      "pixel_count": 9859,
+      "num_components": 490,
+      "output_file": "visualizations/separated_masks/Comedones_Face_color_166_105_117.png"
+    },
+    {
+      "cluster": "0.0",
+      "color_bgr": [
+        113,
+        66,
+        68
+      ],
+      "pixel_count": 3484,
+      "num_components": 843,
+      "output_file": "visualizations/separated_masks/Comedones_Face_color_113_66_68.png"
+    },
+    {
+      "cluster": "0.1",
+      "color_bgr": [
+        191,
+        111,
+        111
+      ],
+      "pixel_count": 6375,
+      "num_components": 401,
+      "output_file": "visualizations/separated_masks/Comedones_Face_color_191_111_111.png"
+    }
+  ],
+  "Dark_Face.jpg": [
+    {
+      "cluster": 1,
+      "color_bgr": [
+        166,
+        105,
+        117
+      ],
+      "pixel_count": 22742,
+      "num_components": 5,
+      "output_file": "visualizations/separated_masks/Dark_Face_color_166_105_117.png"
+    },
+    {
+      "cluster": 0,
+      "color_bgr": [
+        95,
+        185,
+        154
+      ],
+      "pixel_count": 83969,
+      "num_components": 19,
+      "output_file": "visualizations/separated_masks/Dark_Face_color_95_185_154.png"
+    }
+  ],
+  "Pore_Face.jpg": [
+    {
+      "cluster": 1,
+      "color_bgr": [
+        166,
+        105,
+        117
+      ],
+      "pixel_count": 31740,
+      "num_components": 64,
+      "output_file": "visualizations/separated_masks/Pore_Face_color_166_105_117.png"
+    },
+    {
+      "cluster": 0,
+      "color_bgr": [
+        255,
+        255,
+        0
+      ],
+      "pixel_count": 367149,
+      "num_components": 3208,
+      "output_file": "visualizations/separated_masks/Pore_Face_color_255_255_0.png"
+    },
+    {
+      "cluster": "0.0",
+      "color_bgr": [
+        222,
+        92,
+        17
+      ],
+      "pixel_count": 313876,
+      "num_components": 3317,
+      "output_file": "visualizations/separated_masks/Pore_Face_color_222_92_17.png"
+    },
+    {
+      "cluster": "0.1",
+      "color_bgr": [
+        115,
+        43,
+        8
+      ],
+      "pixel_count": 53273,
+      "num_components": 34135,
+      "output_file": "visualizations/separated_masks/Pore_Face_color_115_43_8.png"
+    }
+  ],
+  "Rgb_Tag.jpg": [
+    {
+      "cluster": 0,
+      "color_bgr": [
+        166,
+        105,
+        117
+      ],
+      "pixel_count": 80034,
+      "num_components": 1,
+      "output_file": "visualizations/separated_masks/Rgb_Tag_color_166_105_117.png"
+    },
+    {
+      "cluster": 1,
+      "color_bgr": [
+        0,
+        215,
+        255
+      ],
+      "pixel_count": 16302,
+      "num_components": 43,
+      "output_file": "visualizations/separated_masks/Rgb_Tag_color_0_215_255.png"
+    }
+  ],
+  "Senstive_Face.jpg": [
+    {
+      "cluster": 1,
+      "color_bgr": [
+        166,
+        105,
+        117
+      ],
+      "pixel_count": 77250,
+      "num_components": 1,
+      "output_file": "visualizations/separated_masks/Senstive_Face_color_166_105_117.png"
+    },
+    {
+      "cluster": 0,
+      "color_bgr": [
+        255,
+        255,
+        0
+      ],
+      "pixel_count": 144164,
+      "num_components": 308,
+      "output_file": "visualizations/separated_masks/Senstive_Face_color_255_255_0.png"
+    }
+  ],
+  "T_Oil_Face.jpg": [
+    {
+      "cluster": 0,
+      "color_bgr": [
+        166,
+        105,
+        117
+      ],
+      "pixel_count": 48713,
+      "num_components": 1,
+      "output_file": "visualizations/separated_masks/T_Oil_Face_color_166_105_117.png"
+    },
+    {
+      "cluster": 1,
+      "color_bgr": [
+        0,
+        129,
+        0
+      ],
+      "pixel_count": 18217,
+      "num_components": 218,
+      "output_file": "visualizations/separated_masks/T_Oil_Face_color_0_129_0.png"
+    }
+  ],
+  "U_Oil_Face.jpg": [
+    {
+      "cluster": 0,
+      "color_bgr": [
+        166,
+        105,
+        117
+      ],
+      "pixel_count": 33597,
+      "num_components": 1,
+      "output_file": "visualizations/separated_masks/U_Oil_Face_color_166_105_117.png"
+    },
+    {
+      "cluster": 1,
+      "color_bgr": [
+        0,
+        84,
+        0
+      ],
+      "pixel_count": 7160,
+      "num_components": 215,
+      "output_file": "visualizations/separated_masks/U_Oil_Face_color_0_84_0.png"
+    }
+  ],
+  "Uv_Ex_Tag_Face.jpg": [
+    {
+      "cluster": 1,
+      "color_bgr": [
+        166,
+        105,
+        117
+      ],
+      "pixel_count": 79763,
+      "num_components": 1,
+      "output_file": "visualizations/separated_masks/Uv_Ex_Tag_Face_color_166_105_117.png"
+    },
+    {
+      "cluster": 0,
+      "color_bgr": [
+        0,
+        165,
+        255
+      ],
+      "pixel_count": 262444,
+      "num_components": 625,
+      "output_file": "visualizations/separated_masks/Uv_Ex_Tag_Face_color_0_165_255.png"
+    }
+  ],
+  "Uv_P_Face.jpg": [
+    {
+      "cluster": 1,
+      "color_bgr": [
+        166,
+        105,
+        117
+      ],
+      "pixel_count": 82216,
+      "num_components": 2,
+      "output_file": "visualizations/separated_masks/Uv_P_Face_color_166_105_117.png"
+    },
+    {
+      "cluster": 0,
+      "color_bgr": [
+        0,
+        255,
+        0
+      ],
+      "pixel_count": 197003,
+      "num_components": 1830,
+      "output_file": "visualizations/separated_masks/Uv_P_Face_color_0_255_0.png"
+    }
+  ]
+}
